@@ -1,33 +1,26 @@
-"Vundle Configuration
+"Vim-plug Configuration
 "--------------------------------------------------------------------------------------------
 
 set nocompatible              " be iMproved, required
-filetype off                  " required
 
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-
-
+call plug#begin('~/.vim/plugged')
 "Bundles
 "--------------------------------------------------------------------------------------------
 
 " Usage: install via command line - `vim +PluginInstall +qall`
-Plugin 'gmarik/Vundle.vim'        " required
-Plugin 'bling/vim-airline.git'    " status bar
-Plugin 'scrooloose/nerdtree'      " project filesystem browser
-Plugin 'scrooloose/syntastic.git' " syntax checker
-Plugin 'kien/ctrlp.vim'           " Sublime's command-T
-Plugin 'slim-template/vim-slim'   " syntax highlighting for slim
-Plugin 'mileszs/ack.vim'          " use ack for better global searches
-Plugin 'nanotech/jellybeans.vim'  " color scheme
-Plugin 'skwp/greplace.vim'        " global search and replace
-Plugin 'tpope/vim-fugitive.git'   " git wrapper, use for git reblaming
-Plugin 'nelstrom/vim-qargs.git'   " add :Qargs command, populating argument list f rom files in quickfix
-Plugin 'elixir-lang/vim-elixir'
+Plug 'vim-airline/vim-airline'    " status bar
+Plug 'scrooloose/nerdtree'        " project filesystem browser
+Plug 'vim-syntastic/syntastic'    " syntax checker
+Plug 'kien/ctrlp.vim'             " Sublime's command-T
+Plug 'slim-template/vim-slim'     " syntax highlighting for slim
+Plug 'mileszs/ack.vim'            " use ack for better global searches
+Plug 'nanotech/jellybeans.vim'    " color scheme
+Plug 'skwp/greplace.vim'          " global search and replace
+Plug 'tpope/vim-fugitive'         " git wrapper, use for git reblaming
+Plug 'nelstrom/vim-qargs'         " add :Qargs command, populating argument list f rom files in quickfix
+Plug 'elixir-lang/vim-elixir'
 
-call vundle#end()                 " required
-filetype plugin indent on         " required
+call plug#end()
 
 
 "General VIM configuration
